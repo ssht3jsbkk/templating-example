@@ -1,0 +1,26 @@
+{{> page/title }}
+
+{{> page/nav }}
+
+<h2>Username: {{ username }}</h2>
+<h2>Location: {{ location }}</h2>
+
+<p>Currently School of Code Bootcamping at {{ building }} using {{ computer }} laptops</p>
+
+<table style="border: 1px solid black", "position: relative", "bottom: 100px">
+    <tr>
+        <th>Group Name</th>
+        <th>Date</th>
+        <th>Album Name</th>
+    </tr>
+    {{#each items}}
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ date }}</td>
+            <td>{{ album }}</td>
+
+        </tr>
+    {{/each}}
+</table>
+
+<img src="{{ src }}"/>
